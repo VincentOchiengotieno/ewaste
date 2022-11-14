@@ -109,12 +109,25 @@ button.btn-secondary:hover {
   background: #4eae3a;
   color: #ffffff;
   border-radius: 4.8px;
+  filter: drop-shadow(10px 5px 10px rgb(219, 219, 219));
 }
+
+.navbar-expand-lg.top-nav .navbar-nav .register:hover {
+  background: #4eae3a;
+  color: #ffffff !important;
+}
+
 .navbar-expand-lg.top-nav .navbar-nav .nav-link.active {
   background: #4eae3a;
-  color: #ffffff;
+  color: #ffffff !important;
   border-radius: 4.8px;
+  filter: drop-shadow(10px 5px 10px rgb(219, 219, 219));
 }
+
+.navbar-expand-lg.top-nav .navbar-nav .nav-link.active > .fa {
+  color: #fff;
+}
+
 .navbar-expand-lg.top-nav .navbar-nav .dropdown-menu {
   margin: 0px;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.15);

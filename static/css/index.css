@@ -1,18 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 :root {
-  --background-color: radial-gradient(
-    circle,
-    #334a05 0%,
-    rgba(71, 87, 34, 0.7) 90.74%,
-    rgba(75, 73, 73, 0.75) 100%
-  );
-  background-blend-mode: normal;
+  --background-color: rgb(12, 92, 12);
   --background-color-2: #071d02c0;
   --footer-background: #263238;
 }
 
 *,
 html {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   border: none;
@@ -34,4 +30,34 @@ body {
   background-size: contain;
   height: 233.3px;
   width: 350px;
+}
+
+.icon {
+  position: absolute;
+  margin: auto;
+}
+.nav-item{
+  position: relative;
+}
+
+input[type="text"]:focus, input[type="email"]:focus,
+ input[type="tel"]:focus{
+  outline: 1px solid var(--background-color);
+  border: 1px solid var(--border-color);
+}
+
+.register{
+  height: 40px;
+  width: 100%;
+  color: rgb(29, 25, 25) !important;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  outline: none !important;
+  border-radius: 50px !important;
+  display: inline-block;
+}
+
+.fa.fa-video {
+  color: rgb(255, 153, 0);
 }
