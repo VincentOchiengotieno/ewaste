@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root{
+    --background-color: radial-gradient(circle, #334a05 0%, rgba(71,87,34,0.7) 90.74%, rgba(75,73,73,0.75) 100%);
+    background-blend-mode: normal;
+    --background-color-2:#071d02c0;
+    --footer-background:#263238;
+}
+
+*, html{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.card-img > .img-fluid{
+    background-size: contain;
+    height: 233.3px;
+    width: 350px;
+}

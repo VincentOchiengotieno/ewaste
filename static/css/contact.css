@@ -1,0 +1,8 @@
+.form-control{
+    width: 500px;
+}
+
+.map #map{
+    height: 70vh;
+    width: 70vw;
+}

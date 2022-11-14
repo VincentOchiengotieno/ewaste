@@ -1,0 +1,4 @@
+flask>=2.2.2
+bcrypt
+pymongo=4.3.2
+flask-cors=3.0.10

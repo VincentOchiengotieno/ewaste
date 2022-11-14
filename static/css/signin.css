@@ -1,0 +1,90 @@
+@import url('index.css');
+
+
+
+#background{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container::before{
+    position: absolute;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    background: var(--background-color-2);
+    z-index: 1;
+}
+
+.active {
+    background: var(--background-color);
+}
+
+.signin{
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 35px repeat(2, 70px) repeat(2,35px);
+    z-index: 3;
+    width: 430px;
+    height: 300px;
+    border-radius: 2px;
+    justify-content: center;
+    background-blend-mode: normal;
+    background: var(--background-color);
+
+}
+.signin label{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: repeat(2, 35px);
+}
+
+.signin label > span{
+    color: #fff;
+    line-height: 35px;
+}
+
+.signin label > input{
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 3px;
+}
+
+.signin label > input[type="text"]::placeholder,
+.signin label > input[type="phone"]::placeholder,
+.signin label > input[type="email"]::placeholder{
+    color: var(--background-color-2);
+    font-size: 10pt;
+}
+
+.signin label > input:focus {
+    outline: 2px solid rgb(3, 141, 130);
+}
+
+form #btn-signin{
+    color: green;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #fff;
+}
+
+form #btn-signin:hover{
+    color: #fff;
+    background: rgba(7, 131, 104, 0.651);
+}
+form #signin-footer a{
+    color: #59ADFF;
+    text-decoration: none;
+}

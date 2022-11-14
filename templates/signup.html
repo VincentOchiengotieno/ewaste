@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="static/css/signup.css">
+    <script src="static/js/signup.js" defer></script>
+</head>
+<body>
+  <img id="background" src="static/images/amsingle.jpg" alt="">
+  <div class="container"> 
+    <span id="header">
+      <label for="user" class="active" data-user>
+        User
+      </label>
+      <label for="technician" data-technician>
+        Technician
+      </label>
+      <label for="company" data-company>
+        Company
+      </label>
+
+    </span>
+
+    <!-- User Registration -->
+    <input type="radio" checked name="register" id="user">
+    <form action="signup" method="post" name="user" id="user-reg" class="register">
+      <label for="firstname">
+        <span>FirstName</span>
+        <input type="text" name="firstname" id="firstname" placeholder="LastName">
+      </label>
+      <label for="lastname">
+        <span>LastName</span>
+        <input type="text" name="lastname" id="lastname"  placeholder="LastName">
+      </label>
+      <label for="phone">
+        <span>Phone</span>
+        <input type="tel" name="phone" id="phone"  placeholder="+254700000000">
+      </label>
+      <label for="residence">
+        <span>Residence</span>
+        <input type="text" name="residence" id="residence" placeholder="Residence">
+      </label>
+      <label for="email">
+        <span>Email</span>
+        <input type="email" name="email" id="email" placeholder="example@domain.com">
+      </label>
+
+      <button type="submit" id="btn-login">
+        Sign Up
+      </button>
+
+      <div id="signup-footer">
+        <span>Already have an account
+           <a href="signin">Sign In</a>
+        </span>
+      </div>
+    </form>
+    
+    <!-- Technician Registration -->
+    <input type="radio" name="register" id="technician">
+    <form action="signup" method="post" name="technician" id="technician-reg" class="register">
+      <label for="firstname">
+        <span>FirstName</span>
+        <input type="text" name="firstname" id="firstname" placeholder="LastName">
+      </label>
+      <label for="lastname">
+        <span>LastName</span>
+        <input type="text" name="lastname" id="lastname"  placeholder="LastName">
+      </label>
+      <label for="phone">
+        <span>Phone</span>
+        <input type="tel" name="phone" id="phone"  placeholder="+254700000000">
+      </label>
+      <label for="residence">
+        <span>Residence</span>
+        <input type="text" name="residence" id="residence" placeholder="Residence">
+      </label>
+      <label for="email">
+        <span>Email</span>
+        <input type="email" name="email" id="email" placeholder="example@domain.com">
+      </label>
+
+      <button type="submit" id="btn-login">
+        Sign Up
+      </button>
+
+      <div id="signup-footer">
+        <span>Already have an account
+           <a href="signin">Sign In</a>
+        </span>
+      </div>
+    </form>
+
+    <!-- Company Registration -->
+    <input type="radio" name="register" id="company">
+    <form action="signup" method="post" name="company" id="company-reg" class="register">
+      <label for="firstname">
+        <span>Company Name</span>
+        <input type="text" name="firstname" id="firstname" placeholder="LastName">
+      </label>
+      <label for="lastname">
+        <span>LastName</span>
+        <input type="text" name="lastname" id="lastname"  placeholder="LastName">
+      </label>
+      <label for="phone">
+        <span>Phone</span>
+        <input type="tel" name="phone" id="phone"  placeholder="+254700000000">
+      </label>
+      <label for="residence">
+        <span>Residence</span>
+        <input type="text" name="residence" id="residence" placeholder="Residence">
+      </label>
+      <label for="email">
+        <span>Email</span>
+        <input type="email" name="email" id="email" placeholder="example@domain.com">
+      </label>
+
+      <button type="submit" id="btn-login">
+        Sign Up
+      </button>
+
+      <div id="signup-footer">
+        <span>Already have an account
+           <a href="signin">Sign In</a>
+        </span>
+      </div>
+    </form>
+
+  </div>
+</body>
+</html>

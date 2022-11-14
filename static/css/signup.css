@@ -1,0 +1,165 @@
+@import url('index.css');
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#background{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container::before{
+    position: absolute;
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    background: var(--background-color-2);
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container form[name="user"], .container form[name="technician"],
+.container form[name="company"]{
+    visibility: hidden;
+    position: absolute;
+}
+
+.container input[type="radio"]{
+    display: none;
+    pointer-events: none;
+    z-index: 4;
+}
+
+input[id="user"]:checked + form[name="user"]{
+    visibility: visible;
+}
+input[id="technician"]:checked + form[name="technician"]{
+    visibility: visible;
+}
+input[id="company"]:checked + form[name="company"]{
+    visibility: visible;
+}
+
+.container #header{
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: repeat(3, 146px);
+    grid-template-rows: 40px;
+    user-select: none;
+    margin-top: 20px;
+    flex: 1;
+    z-index: 3;
+    width: 430px;
+}
+
+.container #header label:active {
+    background: var(--background-color);
+    background-blend-mode: hue;
+    z-index: 5;
+}
+
+.container #header > label{
+    display: inline-block;
+    height: 45.5px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    width: 140.5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.container #header > label:first-child{
+    border-top-left-radius: 5px;
+}
+.container #header > label:last-child{
+    border-top-right-radius: 5px;
+}
+
+.container #header > label:last-child{
+    width: 136px;
+}
+
+.active {
+    background: var(--background-color);
+}
+
+.register{
+    flex: 2;
+    z-index: 3;
+    display: grid;
+    row-gap: 20px;
+    grid-template-rows: repeat(5, 70px) 35px;
+    justify-content: center;
+    color: #fff;
+    height: 550px;
+    width: 430px;
+    border-radius: 2px;
+    background-blend-mode: hue;
+    background: var(--background-color);
+
+}
+.register label{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: repeat(2, 35px);
+}
+
+.register label > span{
+    line-height: 35px;
+}
+
+#title{
+    line-height: 35px;
+    text-align: center;
+}
+#title span{
+    padding: 0px 10px;
+    text-align: center;
+}
+.register label > input{
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 3px;
+}
+
+.register label > input[type="text"]::placeholder,
+.register label > input[type="phone"]::placeholder,
+.register label > input[type="email"]::placeholder{
+    color: var(--background-color-2);
+    font-size: 10pt;
+}
+
+.register label > input:focus {
+    outline: 2px solid rgb(3, 141, 130);
+}
+form #btn-login{
+    color: green;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #fff;
+}
+
+form #btn-login:hover{
+    background: rgba(9, 9, 10, 0.651);
+}
+form #signup-footer a{
+    color: #59ADFF;
+    text-decoration: none;
+}
