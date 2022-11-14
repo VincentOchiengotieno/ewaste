@@ -42,6 +42,10 @@ def shops():
 def contact():
     return render_template('contact.html')
 
+@app.route(f"{BASE_URL}livestream", methods=["GET"])
+def livestreams():
+    return render_template('livestream.html')
+
 @app.route(f"{BASE_URL}signup", methods=["GET", "POST"])
 def signup():
     if request.method == "GET":
