@@ -1,7 +1,6 @@
 from flask import Flask, render_template,request,redirect,url_for
 from flask_cors import CORS
 
-PORT=3000
 BASE_URL= "/"
 
 app = Flask(__name__, static_folder='static',
@@ -77,4 +76,4 @@ def signin():
         return redirect(url_for('not_allowed'))
 
 
-app.run(debug=True, port=PORT)
+app.run()
