@@ -58,7 +58,7 @@ input[type="text"]:focus, input[type="email"]:focus,
   display: inline-block;
 }
 
-.nav-item ul{
+.nav-item .nav{
   z-index: 2;
   position: absolute;
   right: 5px;
@@ -75,11 +75,11 @@ input[type="checkbox"]{
   display: none;
 }
 
-input[type="checkbox"]#dropdown:checked + ul{
+input[type="checkbox"]#dropdown:checked + .nav{
   display: block;
 }
 
-.nav-item ul::after{
+.nav-item .nav::after{
   position: absolute;
   content: '';
   width: 20px;
@@ -90,24 +90,22 @@ input[type="checkbox"]#dropdown:checked + ul{
   background: #e6e5e2;
   transform: rotate(45deg);
 }
-.nav-item ul li{
+.nav-item .nav .nav-item{
   height: 30px;
   width: 100px;
   text-align: center;
   line-height: 30px;
-  list-style-type: none;
-}
-.nav-item ul li a{
   text-decoration: none;
+  display: block;
   color: #4eae3a;
 }
 
-.nav-item ul li:hover{
+.nav-item .nav .nav-item:hover{
   color: #fff;
   background: #4eae3a;
   cursor: pointer;
 }
-.nav-item ul li:hover > a{
+.nav-item .nav .nav-item:hover{
   color: #fff;
 }
 
