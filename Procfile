@@ -1,1 +1,1 @@
-web: gunicorn ewastetaiwanese.wsgi
+web: gunicorn wsgi:app
