@@ -1,0 +1,33 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content h2#current{
+    padding-left: 8rem;    
+}
+.content h2#upcoming{
+    transform: translateX(-15.5rem);    
+}
+
+#current-streams,
+#upcoming-streams {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+#current-streams .stream  video,
+#current-streams .stream  video{
+    height: 300px;
+    width: 400px;
+}
+
+#current-streams .stream .description,
+#upcoming-streams .stream .description{
+    font-size: 11pt;
+}

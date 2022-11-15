@@ -46,10 +46,24 @@ def contact():
 def livestreams():
     return render_template('livestream.html')
 
-@app.route(f"{BASE_URL}signup", methods=["GET", "POST"])
-def signup():
+@app.route(f"{BASE_URL}signup/user", methods=["GET", "POST"])
+def signup_user():
     if request.method == "GET":
-        return render_template('signup.html')
+        return render_template('signupuser.html')
+    elif request.method == "POST":
+        return redirect(url_for('signin'))
+
+@app.route(f"{BASE_URL}signup/technician", methods=["GET", "POST"])
+def signup_technician():
+    if request.method == "GET":
+        return render_template('signuptechnician.html')
+    elif request.method == "POST":
+        return redirect(url_for('signin'))
+
+@app.route(f"{BASE_URL}signup/company", methods=["GET", "POST"])
+def signup_company():
+    if request.method == "GET":
+        return render_template('signuptechnician.html')
     elif request.method == "POST":
         return redirect(url_for('signin'))
 

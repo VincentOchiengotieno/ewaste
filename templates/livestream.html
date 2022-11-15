@@ -18,8 +18,11 @@
   <!-- Custom styles for this template -->
   <link href="static/css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/livestream.css">
 
   <script defer src="static/js/index.js"></script>
+  <script defer src="static/js/dropdown.js"></script>
+
   <!-- Bootstrap core JavaScript -->
   <script src="static/vendor/jquery/jquery.min.js"></script>
   <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -66,20 +69,88 @@
           </li>
           <li class="nav-item">
             <button class="register nav-link" href="signup">Sign Up<button/>
-          </li>
+            <input type="checkbox" name="drop" id="dropdown">
+            <ul>
+              <li>User</li>
+              <li>Technician</li>
+              <li>Company</li>
+            </ul>
+        </li>
         </ul>
         </div>
       </div>
     </nav>
 
     <div class="container content">
-      <h2>Current Live Streams</h2>
-      <div id="streams">
+      <h2 id="current"> <i class="fa fa-live"></i> Current Live Streams</h2>
+      <div id="current-streams">
         <div class="stream">
-          <video src="">
-            <source src="" type="">
+          <video class="stream-item" controls>
+            <source src="static/videos/flutter.mp4" type="video/mp4">
           </video>
+          <p class="description">
+            This Video Is Nice
+          </p>
         </div>
+        <div class="stream">
+          <video class="stream-item" controls>
+            <source src="static/videos/flutter.mp4" type="video/mp4">
+          </video>
+          <p class="description">
+            This Video Is Nice
+          </p>
+        </div>
+        <div class="stream">
+          <video class="stream-item" controls>
+            <source src="static/videos/flutter.mp4" type="video/mp4">
+          </video>
+          <p class="description">
+            This Video Is Nice
+          </p>
+        </div>
+        <div class="stream">
+          <video class="stream-item" controls>
+            <source src="static/videos/flutter.mp4" type="video/mp4">
+          </video>
+          <p class="description">
+            This Video Is Nice
+          </p>
+        </div>
+      <h2 id="upcoming">Up Coming Streams<h2/>
+      <div id="upcoming-streams">
+        <div class="stream">
+          <video class="stream-item" controls>
+            <source src="static/videos/flutter.mp4" type="video/mp4">
+          </video>
+          <p class="description">
+            This Video Is Nice
+          </p>
+        </div>
+        <div class="stream">
+          <video class="stream-item" controls>
+            <source src="static/videos/flutter.mp4" type="video/mp4">
+          </video>
+          <p class="description">
+            This Video Is Nice
+          </p>
+        </div>
+        <div class="stream">
+          <video class="stream-item" controls>
+            <source src="static/videos/flutter.mp4" type="video/mp4">
+          </video>
+          <p class="description">
+            This Video Is Nice
+          </p>
+        </div>
+        <div class="stream">
+          <video class="stream-item" controls>
+            <source src="static/videos/flutter.mp4" type="video/mp4">
+          </video>
+          <p class="description">
+            This Video Is Nice
+          </p>
+        </div>
+        
       </div>
     </div>
 

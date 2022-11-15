@@ -36,7 +36,7 @@ body {
   position: absolute;
   margin: auto;
 }
-.nav-item{
+.navbar-nav{
   position: relative;
 }
 
@@ -48,7 +48,7 @@ input[type="text"]:focus, input[type="email"]:focus,
 
 .register{
   height: 40px;
-  width: 100%;
+  width: 100px;
   color: rgb(29, 25, 25) !important;
   text-align: center;
   line-height: 20px;
@@ -58,6 +58,59 @@ input[type="text"]:focus, input[type="email"]:focus,
   display: inline-block;
 }
 
+.nav-item ul{
+  z-index: 2;
+  position: absolute;
+  right: 5px;
+  top: 60px;
+  height: 90px;
+  width: 100px;
+  display: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background: #e6e5e2;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"]#dropdown:checked + ul{
+  display: block;
+}
+
+.nav-item ul::after{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  left: 40px;
+  z-index: -2;
+  background: #e6e5e2;
+  transform: rotate(45deg);
+}
+.nav-item ul li{
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  line-height: 30px;
+  list-style-type: none;
+}
+.nav-item ul li a{
+  text-decoration: none;
+  color: #4eae3a;
+}
+
+.nav-item ul li:hover{
+  color: #fff;
+  background: #4eae3a;
+  cursor: pointer;
+}
+.nav-item ul li:hover > a{
+  color: #fff;
+}
+
 .fa.fa-video {
-  color: rgb(255, 153, 0);
+  color: #4eae3a;
 }

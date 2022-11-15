@@ -123,6 +123,9 @@ button.btn-secondary:hover {
   border-radius: 4.8px;
   filter: drop-shadow(10px 5px 10px rgb(219, 219, 219));
 }
+.navbar-expand-lg.top-nav .navbar-nav .nav-link:hover > .fa{
+  color: aliceblue !important;
+}
 
 .navbar-expand-lg.top-nav .navbar-nav .nav-link.active > .fa {
   color: #fff;

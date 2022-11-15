@@ -13,6 +13,8 @@
 	<!-- Custom styles for this template -->
 	<link href="static/css/style.css" rel="stylesheet">
 	<link href="static/css/contact.css" rel="stylesheet">
+  <script defer src="static/js/dropdown.js"></script>
+
 </head>
 <body>
     <!-- Navigation -->
@@ -55,7 +57,13 @@
           </li>
           <li class="nav-item">
             <button class="register nav-link" href="signup">Sign Up<button/>
-            </li>
+            <input type="checkbox" name="drop" id="dropdown">
+            <ul>
+              <li>User</li>
+              <li>Technician</li>
+              <li>Company</li>
+            </ul>
+        </li>
         </ul>
         </div>
       </div>

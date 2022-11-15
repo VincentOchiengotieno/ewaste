@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="static/css/signup.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="signup/user" method="post" name="signup" id="signup" class="signup">
+        <h2>User Registration</h2> 
+        <label for="firstname">
+          <span>FirstName</span>
+          <input type="text" placeholder="FirstName" name="firstname" id="fitstname">
+        </label>
+        <label for="phone">
+          <span>LastName</span>
+          <input type="text" placeholder="LastName" name="lastname" id="lastname">
+        </label>
+        <label for="phone">
+          <span>Phone</span>
+          <input type="phone" placeholder="Phone" name="phone" id="phone">
+        </label>
+        <label for="email">
+          <span>Email</span>
+          <input type="email" placeholder="Email" name="email" id="email">
+        </label>
+        <label for="password">
+          <span>Password</span>
+          <input type="password" placeholder="Password" name="password" id="password">
+        </label>
+        <button id="btn-signin" type="submit">
+          Login
+        </button>
+        <span id="signin-footer">
+          Already have an account? <a href="signup"> Sign In</a>
+        </span>
+      </form>
+    </div>
+  </body>
+</html>

@@ -24,6 +24,8 @@
 
 
     <script defer src="static/js/index.js"></script>
+    <script defer src="static/js/dropdown.js"></script>
+
     <!-- Bootstrap core JavaScript -->
     <script src="static/vendor/jquery/jquery.min.js"></script>
     <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -69,7 +71,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <button class="register nav-link" href="signup">Sign Up<button/>
+                <button class="register nav-link" href="signup">Sign Up<button/>
+                <input type="checkbox" name="drop" id="dropdown">
+                <ul>
+                  <li><a href="signup/user"> User</a></li>
+                  <li> <a href="signup/technician"> Technician</a></li>
+                  <li><a href="signup/technician"> Company</a></li>
+                </ul>
             </li>
           </ul>
         </div>
